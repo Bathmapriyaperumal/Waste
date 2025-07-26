@@ -11,10 +11,10 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#4F46E5',
-                        secondary: '#10B981',
-                        dark: '#1F2937',
-                        light: '#F9FAFB',
+                        primary: '#4F46E5',    // Purple
+                        secondary: '#10B981',  // Emerald
+                        dark: '#1F2937',       // Dark gray
+                        light: '#F9FAFB',      // Light gray
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -24,10 +24,10 @@
         }
     </script>
 </head>
-<body class="font-sans bg-light text-dark">
+<body class="font-sans bg-gray-50 text-gray-900">
     <!-- Navigation -->
     <nav class="bg-white shadow-sm py-4 sticky top-0 z-50">
-        <div class="container mx-auto px-4 md:px-6 flex justify-between items-center">
+        <div class="container mx-auto px-6 flex justify-between items-center">
             <div class="flex items-center">
                 <span class="text-2xl font-bold text-primary">Logo</span>
             </div>
@@ -38,9 +38,9 @@
                 <a href="#" class="text-gray-600 hover:text-primary transition">About</a>
                 <a href="#" class="text-gray-600 hover:text-primary transition">Contact</a>
             </div>
-            <div class="hidden md:block">
-                <button class="bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition">Get Started</button>
-            </div>
+            <button class="bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition hidden md:block">
+                Get Started
+            </button>
             <button class="md:hidden text-gray-600">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -51,32 +51,36 @@
 
     <!-- Hero Section -->
     <section class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-4 md:px-6">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0">
-                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Build your next project with our amazing tools</h1>
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Build Your Dream Project With Us</h1>
                     <p class="text-lg text-gray-600 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                        <button class="bg-primary text-white px-6 py-3 rounded-md hover:bg-opacity-90 transition">Get Started</button>
-                        <button class="border border-primary text-primary px-6 py-3 rounded-md hover:bg-primary hover:text-white transition">Learn More</button>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-primary text-white px-6 py-3 rounded-md hover:bg-opacity-90 transition">
+                            Get Started
+                        </button>
+                        <button class="border border-primary text-primary px-6 py-3 rounded-md hover:bg-primary hover:text-white transition">
+                            Learn More
+                        </button>
                     </div>
                 </div>
                 <div class="md:w-1/2">
-                    <img src="hero-image.jpg" alt="Hero Image" class="rounded-lg shadow-xl w-full">
+                    <img src="images/hero-image.jpg" alt="Hero Image" class="rounded-xl shadow-lg w-full">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="py-16 bg-light">
-        <div class="container mx-auto px-4 md:px-6">
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold mb-4">Our Features</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
                 <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
                     <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
@@ -84,8 +88,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Fast Performance</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                    <h3 class="text-xl font-semibold mb-3">Lightning Fast</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 
                 <!-- Feature 2 -->
@@ -96,38 +100,11 @@
                         </svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Secure Data</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 
                 <!-- Feature 3 -->
                 <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
                     <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Cloud Storage</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4 md:px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-4">What Our Customers Say</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-light p-8 rounded-lg">
-                    <div class="flex items-center mb-4">
-                        <img src="user1.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-semibold">John Doe</h4>
-                            <p class="text-gray-600 text-sm">CEO, Company</p>
-                        </div>
-                    </div
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 
